@@ -1,8 +1,32 @@
+:root {
+  --primary-color: #cacaca;
+  --background-color: #2a2a2a;
+  --title-font-family: "Montserrat", sans-serif;
+  --content-font-family: "Lato", sans-serif;
+}
+
 body {
-  background-color: #2A2A2A;
+  background-color: var(--background-color);
+  font-family: var(--content-font-family);
+  color: var(--primary-color);
 }
 
 h1 {
   color: #cacaca;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  width: 400px;
+  display: block;
+  margin: auto;
+}
+.fa-github,
+.fa-instagram,
+.fa-at,
+.fa-envelope {
+  color: aliceblue;
+  font-size: 30px;
+  display: inline-block;
+  margin: 10px;
 }
