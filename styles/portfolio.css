@@ -9,11 +9,13 @@ body {
   background-color: var(--background-color);
   font-family: var(--content-font-family);
   color: var(--primary-color);
+  text-align: center;
 }
 
 h1 {
   color: #cacaca;
   font-family: "Montserrat", sans-serif;
+  margin: 30px;
 }
 
 hr {
@@ -22,11 +24,15 @@ hr {
   margin: auto;
 }
 .fa-github,
-.fa-instagram,
-.fa-at,
+.fa-square-phone,
 .fa-envelope {
   color: aliceblue;
   font-size: 30px;
   display: inline-block;
   margin: 10px;
+}
+
+.img-fluid {
+    max-width: 400px;
+    margin: 20px;
 }
