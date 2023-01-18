@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <script
       src="https://kit.fontawesome.com/569302e2e2.js"
       crossorigin="anonymous"
@@ -35,83 +36,65 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-color">
+      <div class="container-fluid pt-1">
+        <div
+          class="col-2 d-none d-sm-none d-md-none d-lg-none d-xl-block"
+        ></div>
+        <div
+          class="col-1 d-none d-sm-none d-md-none d-lg-block d-xl-none"
+        ></div>
+        <a class="navbar-brand" id="name" href="#">Maria Ruiz</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-right">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-right">
+              <a class="nav-link" href="#">About me</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            <li class="nav-right">
+              <a class="nav-link" href="#">Contact me</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <img src="images/me.jpg" id="profile-picture" class="img-fluid" />
+    <h1>Front-end developer</h1>
+    <h2>Las Vegas, Unites States.</h2>
 
-    <h1>Maria Ruiz</h1>
-    <h2>Front-end developer, based in the Unites States</h2>
-    
+    <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <img src="images/mindfulness.png" alt="img" draggable="false" />
+        <img src="images/weather1.png" alt="img" draggable="false" />
+        <img src="images/clock.png" alt="img" draggable="false" />
+        <img src="images/desk.jpg" alt="img" draggable="false" />
+        <img src="images/mindfulness.png" alt="img" draggable="false" />
+      </div>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
 
-    
-
-    <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/weather1.png" class="d-block w-100" class="pictures" alt="weather">
-    </div>
-    <div class="carousel-item">
-      <img src="images/clock.png" class="d-block w-100" class="pictures" alt="weather">
-    </div>
-    <div class="carousel-item">
-      <img src="images/mindfulness.png" class="d-block w-100" class="pictures" alt="weather">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<br>
+    <br />
     <hr />
     <i class="fa-brands fa-github"></i>
     <i class="fa-regular fa-envelope"></i>
     <i class="fa-solid fa-square-phone"></i>
+    <script src="styles/index.js"></script>
   </body>
 </html>
