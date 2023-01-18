@@ -111,9 +111,8 @@ h1 {
   font-family: var(--title-font-family);
 }
 h2 {
-  margin-bottom: 50px;
-  font-weight: 600;
-  
+  margin-bottom: 25px;
+  font-weight: 30px;
 }
 
 hr {
@@ -124,14 +123,11 @@ hr {
 .fa-github,
 .fa-square-phone,
 .fa-envelope {
- 
   color: white;
   font-size: 30px;
   display: inline-block;
   margin: 10px;
 }
-
-
 
 #profile-picture {
   max-width: 200px;
@@ -145,7 +141,6 @@ hr {
   opacity: 0.9;
   font-weight: 600;
   font-family: var(--title-font-family);
-  
 }
 
 #navbarNav {
@@ -153,7 +148,6 @@ hr {
   font-size: 20px;
   font-weight: 600;
   font-family: var(--title-font-family);
-  
 }
 .wrapper {
   max-width: 1200px;
@@ -206,4 +200,13 @@ hr {
   .carousel img {
     width: 100%;
   }
+}
+
+p {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: black;
+  
 }
