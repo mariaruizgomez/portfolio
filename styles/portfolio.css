@@ -7,7 +7,6 @@
 
 body {
   margin-top: 100px;
-  background-color: var(--background-color);
   font-family: var(--content-font-family);
   color: var(--primary-color);
   text-align: center;
@@ -107,7 +106,6 @@ body {
 h1 {
   color: white;
   font-family: var(--title-font-family);
-  margin: 0;
 }
 h2 {
   margin-bottom: 50px;
@@ -121,21 +119,28 @@ hr {
 }
 .fa-github,
 .fa-square-phone,
-.fa-envelope {
+.fa-envelope,
+.fa-toggle-on,
+.fa-toggle-off {
   color: white;
   font-size: 30px;
   display: inline-block;
   margin: 10px;
 }
 
+.fa-toggle-off {
+  color: black;
+}
+
 #profile-picture {
   max-width: 200px;
   border-radius: 20px;
   margin: 20px;
+  margin-top: 10px;
 }
 
 .navbar-color {
-  animation: 100000ms ease-in-out infinite new-color-change;
+  animation: 100000ms ease-in-out infinite color-change;
   opacity: 0.9;
   font-weight: 600;
   font-family: var(--title-font-family);
@@ -188,7 +193,7 @@ hr {
   transform: translate(-50%);
 }
 .wrapper i:first-child {
-    display: none;
+  display: none;
   left: -23px;
 }
 .wrapper i:last-child {
