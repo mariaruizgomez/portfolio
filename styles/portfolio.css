@@ -17,6 +17,8 @@ body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/381/original/3d-modern-art-with-image-glossy-metal-female-form.jpg?1674038709");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 @keyframes color-change {
