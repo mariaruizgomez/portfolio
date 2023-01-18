@@ -122,18 +122,25 @@ hr {
 }
 .fa-github,
 .fa-square-phone,
-.fa-envelope, .fa-linkedin {
+.fa-envelope,
+.fa-linkedin {
   color: white;
   font-size: 30px;
   display: inline-block;
   margin: 10px;
 }
 
-.fa-node-js, .fa-css3-alt, .fa-html5, .fa-bootstrap, .fa-react, .fa-codepen {
+.fa-node-js,
+.fa-css3-alt,
+.fa-html5,
+.fa-bootstrap,
+.fa-react,
+.fa-codepen {
   color: white;
   font-size: 50px;
   display: inline-block;
-  margin: 10px; 
+  margin: 10px;
+  margin-bottom: 40px;
 }
 
 #profile-picture {
@@ -215,5 +222,4 @@ p {
   line-height: 1.5;
   text-align: center;
   color: black;
-  
 }
