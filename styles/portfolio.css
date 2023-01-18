@@ -8,13 +8,13 @@
 body {
   margin-top: 100px;
   font-family: var(--content-font-family);
-  color: #2a2a2a;
+  color: white;
   text-align: center;
   background-color: #2a2a2a;
   align-items: center;
   min-height: 100vh;
   padding: 0 35px;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/230/original/background.jpg?1673943079");
+  background-image: url("https://img.freepik.com/free-photo/3d-modern-art-with-image-glossy-metal-female-form_1048-17738.jpg?w=740&t=st=1674038033~exp=1674038633~hmac=58a3b844764b0f1d70b6281b0257268a9264d9100d98774a42ce6237c05bbae8");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -107,12 +107,13 @@ body {
 }
 
 h1 {
-  color: #2a2a2a;
+  color: white;
   font-family: var(--title-font-family);
 }
 h2 {
   margin-bottom: 50px;
   font-weight: 600;
+  
 }
 
 hr {
@@ -122,13 +123,17 @@ hr {
 }
 .fa-github,
 .fa-square-phone,
-.fa-envelope,
-.fa-toggle-on,
-.fa-toggle-off {
+.fa-envelope {
+ 
   color: white;
   font-size: 30px;
   display: inline-block;
   margin: 10px;
+}
+
+.fa-house {
+  color: #D4D5D7;
+
 }
 
 #profile-picture {
@@ -143,6 +148,7 @@ hr {
   opacity: 0.9;
   font-weight: 600;
   font-family: var(--title-font-family);
+  
 }
 
 #navbarNav {
@@ -150,6 +156,7 @@ hr {
   font-size: 20px;
   font-weight: 600;
   font-family: var(--title-font-family);
+  
 }
 .wrapper {
   max-width: 1200px;
