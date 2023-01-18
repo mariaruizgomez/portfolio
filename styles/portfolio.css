@@ -8,12 +8,15 @@
 body {
   margin-top: 100px;
   font-family: var(--content-font-family);
-  color: var(--primary-color);
+  color: #2a2a2a;
   text-align: center;
-  animation: 100000ms ease-in-out infinite color-change;
+  background-color: #2a2a2a;
   align-items: center;
   min-height: 100vh;
   padding: 0 35px;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/230/original/background.jpg?1673943079");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @keyframes color-change {
@@ -104,7 +107,7 @@ body {
 }
 
 h1 {
-  color: white;
+  color: #2a2a2a;
   font-family: var(--title-font-family);
 }
 h2 {
@@ -128,10 +131,6 @@ hr {
   margin: 10px;
 }
 
-.fa-toggle-off {
-  color: black;
-}
-
 #profile-picture {
   max-width: 200px;
   border-radius: 20px;
@@ -140,7 +139,7 @@ hr {
 }
 
 .navbar-color {
-  animation: 100000ms ease-in-out infinite color-change;
+  background-color: #2a2a2a;
   opacity: 0.9;
   font-weight: 600;
   font-family: var(--title-font-family);
