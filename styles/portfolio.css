@@ -122,11 +122,18 @@ hr {
 }
 .fa-github,
 .fa-square-phone,
-.fa-envelope {
+.fa-envelope, .fa-linkedin {
   color: white;
   font-size: 30px;
   display: inline-block;
   margin: 10px;
+}
+
+.fa-node-js, .fa-css3-alt, .fa-html5, .fa-bootstrap, .fa-react, .fa-codepen {
+  color: white;
+  font-size: 60px;
+  display: inline-block;
+  margin: 10px; 
 }
 
 #profile-picture {
