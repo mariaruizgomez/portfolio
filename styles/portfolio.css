@@ -108,13 +108,15 @@ body {
   }
 }
 
-h1 {
+h2 {
   color: white;
   font-family: var(--title-font-family);
+  font-size: 60px;
 }
-h2 {
+h1 {
   margin-bottom: 25px;
   font-weight: 30px;
+  font-size: 30px;
 }
 
 hr {
@@ -130,15 +132,50 @@ hr {
   font-size: 30px;
   display: inline-block;
   margin: 10px;
+  text-decoration: none;
 }
 
-.fa-node-js,
-.fa-css3-alt,
-.fa-html5,
-.fa-bootstrap,
-.fa-react,
+.fa-node-js {
+  color: #fbd485;
+  font-size: 50px;
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.fa-bootstrap {
+  color: #7431f9;
+  font-size: 50px;
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+.fa-html5 {
+  color: #de4b25;
+  font-size: 50px;
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.fa-css3-alt {
+  color: #254ce4;
+  font-size: 50px;
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.fa-react {
+  color: #5ed3f3;
+  font-size: 50px;
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
 .fa-codepen {
-  color: white;
+  color: black;
   font-size: 50px;
   display: inline-block;
   margin: 10px;
