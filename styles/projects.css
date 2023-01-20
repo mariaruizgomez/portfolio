@@ -8,12 +8,14 @@
 #header-page {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/608/original/4900340.jpg?1674161230");
   background-size: cover;
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   height: 25vw;
   min-height: 250px;
-  max-height: 350px;
-  margin-top: 70px;
+  max-height: 370px;
+  margin-top: 50px;
+  max-width: 100%;
 }
 
 .navbar-color {
