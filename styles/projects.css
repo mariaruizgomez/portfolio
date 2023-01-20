@@ -17,16 +17,15 @@
 }
 
 .navbar-color {
-  background-color: #2a2a2a;
-  opacity: 0.9;
-  font-weight: 600;
+  background-color: #c8c8c8;
   font-family: var(--title-font-family);
+  padding: 3px;
+  opacity: 0.8;
 }
-
 #navbarNav {
   text-align: left;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--title-font-family);
 }
 hr {
@@ -39,7 +38,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #2d2d2d;
-  margin-top: 70px;
 }
 
 h1 {
@@ -47,7 +45,7 @@ h1 {
   text-align: center;
   margin: 0 0 5% 0;
   padding: 0.5em;
-  margin: 0 0 5% 0;
+
   font-weight: 30px;
   font-size: 60px;
   display: block;
@@ -200,4 +198,27 @@ h1 {
   .card {
     height: 260px;
   }
+  # {
+    margin-bottom: 30px;
+  }
+}
+.fa-github,
+.fa-square-phone,
+.fa-envelope,
+.fa-linkedin {
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+}
+hr {
+  width: 400px;
+  display: block;
+  margin: auto;
+  color: white;
+}
+.icons {
+  display: flex;
+  justify-content: center;
 }

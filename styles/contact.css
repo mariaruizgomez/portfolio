@@ -8,34 +8,55 @@ body {
   color: #333;
   font-family: var(--content-font-family);
   font-weight: normal;
-  margin: 0;
-  padding: 0;
   background-color: #2d2d2d;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 h1 {
   color: white;
   text-align: center;
-  margin: 0 0 5% 0;
-  padding: 0.5em;
-  margin: 0 0 5% 0;
   font-weight: 30px;
   font-size: 60px;
-  display: block;
+  margin-bottom: 20px;
   font-family: var(--title-font-family);
 }
 
 .navbar-color {
-  background-color: #2d2d2d;
-  opacity: 0.9;
-  font-weight: 600;
+  background-color: #c8c8c8;
   font-family: var(--title-font-family);
+  padding: 3px;
+  opacity: 0.8;
 }
-
 #navbarNav {
   text-align: left;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--title-font-family);
+}
+hr {
+  width: 400px;
+  display: block;
+  margin: auto;
+  color: white;
+}
+.fa-github,
+.fa-square-phone,
+.fa-envelope,
+.fa-linkedin {
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  margin: -150 auto;
+  padding: 0.5em;
+  font-weight: 30px;
+  font-size: 60px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+#connect {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
