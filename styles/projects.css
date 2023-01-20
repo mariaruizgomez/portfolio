@@ -21,9 +21,8 @@ p {
   font-family: var(--content-font-family);
   font-size: 30px;
 }
-.container {
+#header-page {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/608/original/4900340.jpg?1674161230");
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -31,7 +30,6 @@ p {
   min-height: 250px;
   max-height: 350px;
 }
-
 
 .navbar-color {
   background-color: #2a2a2a;
