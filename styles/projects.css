@@ -121,7 +121,7 @@ h1 {
   text-decoration: none;
   border-radius: 2px;
   font-size: 0.9em;
-  transition: all 0.2s ease 0s;
+  transition: all 0.9s ease 0.4s;
 }
 
 .card .back a:hover {
