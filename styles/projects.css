@@ -4,23 +4,7 @@
   --title-font-family: "Montserrat", sans-serif;
   --content-font-family: "Lato", sans-serif;
 }
-body {
-  background-color: white;
-  margin-top: 70px;
-  font-family: var(--content-font-family);
-}
-h1 {
-  color: #2a2a2a;
-  display: block;
-  font-weight: 30px;
-  font-size: 60px;
-  font-family: var(--title-font-family);
-}
-p {
-  color: #2a2a2a;
-  font-family: var(--content-font-family);
-  font-size: 30px;
-}
+
 #header-page {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/608/original/4900340.jpg?1674161230");
   background-size: cover;
@@ -29,6 +13,7 @@ p {
   height: 25vw;
   min-height: 250px;
   max-height: 350px;
+  margin-top: 70px;
 }
 
 .navbar-color {
@@ -46,4 +31,173 @@ p {
 }
 hr {
   color: #f5b400;
+}
+body {
+  color: #333;
+  font-family: var(--content-font-family);
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background-color: #2d2d2d;
+  margin-top: 70px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin: 0 0 5% 0;
+  padding: 0.5em;
+  margin: 0 0 5% 0;
+  font-weight: 30px;
+  font-size: 60px;
+  display: block;
+  font-family: var(--title-font-family);
+}
+
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+.cardBox:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+.cardBox .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card .back a {
+  padding: 0.5em 0.7em;
+  background: teal;
+  box-shadow: 5px 2px 2px rgb(180, 179, 179);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+.cardBox:nth-child(1) .card .back {
+  background: #f0cbd3;
+}
+
+.cardBox:nth-child(2) .card .back {
+  background: #596e79;
+}
+
+.cardBox:nth-child(3) .card .back {
+  background: #958c84;
+}
+
+.cardBox:nth-child(4) .card .back {
+  background: #b6e2f8;
+}
+
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
 }

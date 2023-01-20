@@ -1,95 +1,170 @@
-.wrapper:hover > .front-face {
-  transform: rotateY(-180deg);
+:root {
+  --primary-color: white;
+  --background-color: #2a2a2a;
+  --title-font-family: "Montserrat", sans-serif;
+  --content-font-family: "Lato", sans-serif;
 }
-.wrapper .card img {
+body {
+  color: #333;
+  font-family: var(--title-font-family);
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 5% 0;
+  padding: 0.5em;
+  margin: 0 0 5% 0;
+}
+
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+.cardBox:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+.cardBox .card img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
 }
-.wrapper .back-face {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+
+.card p {
+  margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
   transform: rotateY(180deg);
 }
-.wrapper:hover > .back-face {
-  transform: rotateY(0deg);
-}
-.wrapper .back-face img {
-  height: 150px;
-  width: 150px;
-  padding: 5px;
-  border-radius: 50%;
-  background-color: burlywood;
-}
-.wrapper .back-face .info {
-  text-align: center;
-}
-.wrapper .back-face .title {
-  font-size: 30px;
-  font-weight: 500;
-}
-.back-face ul {
-  display: flex;
-}
-html,
-body {
-  display: flex;
-  justify-content: space-evenly;
-  height: 100%;
-  width: 100%;
-  place-items: center;
-  background-color: rgb(66, 63, 63);
-}
-::selection {
+
+.card .back a {
+  padding: 0.5em 0.7em;
+  background: teal;
+  box-shadow: 10px 5px 5px rgb(180, 179, 179);
   color: #fff;
-  background: #1cc7d0;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
 }
-.wrapper {
-  height: 400px;
-  width: 320px;
-  position: relative;
-  transform-style: preserve-3d;
-  perspective: 1000px;
+
+.card .back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
 }
-.wrapper .card {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  background-color: white;
-  border-radius: 10px;
-  transform: translateY(0deg);
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+
+.cardBox:nth-child(1) .card .back {
+  background: #f0cbd3;
 }
-.back-face ul a {
-  display: block;
-  height: 40px;
-  width: 40px;
-  color: rgb(185, 26, 26);
-  text-align: center;
-  margin: 0 5px;
-  line-height: 38px;
-  border: 2px solid transparent;
-  border-radius: 50px;
-  background-color: rgb(214, 210, 218);
-  transition: all 0.5s ease;
+
+.cardBox:nth-child(2) .card .back {
+  background: #596e79;
 }
-.back-face ul a:hover {
-  color: #1cc7d0;
-  border-color: #1cc7d0;
-  background: linear-gradient(375deg, transparent, transparent);
+
+.cardBox:nth-child(3) .card .back {
+  background: #958c84;
 }
-@media (max-width: 960px) {
-  html,
-  body {
-    display: grid;
-    place-items: center;
-    margin-top: 20px;
+
+.cardBox:nth-child(4) .card .back {
+  background: #b6e2f8;
+}
+
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
   }
 }
