@@ -250,8 +250,8 @@ hr {
   right: -23px;
 }
 @media screen and (max-width: 900px) {
-  .carousel img {
-    width: 65%;
+  .wrapper img {
+    width: 100%;
   }
 }
 
