@@ -31,10 +31,14 @@
   margin: 0;
   font-family: var(--content-font-family);
 }
-
 body {
+  background-color: #2d2d2d;
 }
-
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
 hr {
   width: 400px;
   display: block;
@@ -45,8 +49,10 @@ hr {
 .fa-square-phone,
 .fa-envelope,
 .fa-linkedin {
-  color: rgb(12, 12, 12);
+  color: white;
   font-size: 30px;
+  display: inline-block;
+  margin: 10px;
   text-decoration: none;
 }
 

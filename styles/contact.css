@@ -19,7 +19,6 @@ h1 {
   font-size: 60px;
   margin-top: 60px;
   font-family: var(--title-font-family);
-  
 }
 
 .navbar-color {
@@ -47,15 +46,13 @@ hr {
   text-decoration: none;
   font-weight: 30px;
   font-size: 50px;
- 
 }
 .connect-picture {
   display: block;
   margin: 40px auto;
   max-width: 100%;
   border-radius: 30px;
-  width: 600px;
- 
+  width: 450px;
 }
 footer {
   text-align: center;
