@@ -24,7 +24,7 @@
 }
 .hero p {
   font-weight: 900;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.5;
   text-align: center;
   color: black;
@@ -39,6 +39,7 @@ body {
   justify-content: center;
   margin-top: 40px;
 }
+
 hr {
   width: 400px;
   display: block;
@@ -96,4 +97,30 @@ hr {
   font-size: 20px;
   font-weight: 400;
   font-family: var(--title-font-family);
+}
+#img-get-in-touch {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  width: 500px;
+}
+
+#icons-contact {
+}
+.fa-github,
+.fa-square-phone,
+.fa-envelope,
+.fa-linkedin {
+  color: white;
+  font-size: 30px;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+}
+#icon-github,
+#icon-phone,
+#icon-email,
+#icon-linkedin {
+  color: #fd8891;
+  font-size: 60px;
 }

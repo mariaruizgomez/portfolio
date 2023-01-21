@@ -31,78 +31,95 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/portfolio.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-color">
-      <div class="container-fluid">
-        <a class="navbar-brand" id="name" href="/">
-          <i class="fa-solid fa-code"></i> Maria Ruiz</a
+    <div class="hero">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-color">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="name" href="/">
+            <i class="fa-solid fa-code"></i> Maria Ruiz</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-right">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-right">
+                <a class="nav-link" href="about.html">Portfolio</a>
+              </li>
+              <li class="nav-right">
+                <a class="nav-link" href="contact.html">Contact me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h2>Get in touch</h2>
+      <p class="mb-5">
+        I'd love to connect and discuss future collaborations.<em
+          >Thank you for stopping by!</em
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-right">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-right">
-              <a class="nav-link" href="about.html">Portfolio</a>
-            </li>
-            <li class="nav-right">
-              <a class="nav-link" href="contact.html">Contact me</a>
-            </li>
-          </ul>
+      </p>
+      <div>
+        <img
+          src="images/connect.jpg"
+          class="img-fluid rounded-5 p-2 shadow-sm"
+          id="img-get-in-touch"
+          alt="img"
+        />
+      </div>
+      <div class="container mb-2" id="icons-contact">
+        <div class="row">
+          <div class="col-sm-3">
+            <a
+              href="https://github.com/mariaruizgomez"
+              target="_blank"
+              class="fa-brands fa-github img-fluid"
+              id="icon-github"
+            ></a>
+          </div>
+          <div class="col-sm-3">
+            <a
+              href="mailto:rgomezm86@gmail.com"
+              target="_blank"
+              class="fa-regular fa-envelope img-fluid"
+              id="icon-email"
+            ></a>
+          </div>
+          <div class="col-sm-3">
+            <a
+              href="https://www.linkedin.com/in/carmenruizgomez/"
+              target="_blank"
+              class="fa-brands fa-linkedin img-fluid"
+              id="icon-linkedin"
+            ></a>
+          </div>
+          <div class="col-sm-3">
+            <i
+              class="fa-solid fa-square-phone img-fluid"
+              id="icon-phone"
+              title="+17024975145"
+            ></i>
+          </div>
         </div>
       </div>
-    </nav>
-    
-    <h1>Get in touch</h1>
-    <img src="images/connect.jpg" class="connect-picture" alt="img"/>
-
-    <hr />
-    <footer>
-    <div class="d-flex justify-content-evenly mt-5">
-        <div>
-      <a
-        href="https://github.com/mariaruizgomez"
-        target="_blank"
-        class="fa-brands fa-github"
-      ></a>
-            </div>
-            <div>
-      <a
-        href="mailto:rgomezm86@gmail.com"
-        target="_blank"
-        class="fa-regular fa-envelope"
-      ></a>
-</div>
-<div>
-      <a
-        href="https://www.linkedin.com/in/carmenruizgomez/"
-        target="_blank"
-        class="fa-brands fa-linkedin"
-      ></a>
-</div>
-<div>
-      <i class="fa-solid fa-square-phone" title="+17024975145"></i>
     </div>
-    
-    </div>
-    </footer>
   </body>
 </html>
