@@ -37,7 +37,7 @@ body {
 .icons {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 hr {
@@ -123,4 +123,5 @@ hr {
 #icon-linkedin {
   color: #fd8891;
   font-size: 60px;
+  margin-top: 20px;
 }

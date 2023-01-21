@@ -220,6 +220,7 @@ hr {
 .icons {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 .cardBox {
   margin-bottom: 3%;
