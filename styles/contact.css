@@ -9,22 +9,22 @@ body {
   font-family: var(--content-font-family);
   font-weight: normal;
   background-color: #2d2d2d;
-  margin-top: 150px;
+  margin-top: 70px;
+  text-align: center;
 }
 
 h1 {
   color: white;
-  text-align: center;
   font-weight: 30px;
   font-size: 60px;
-  margin-bottom: 20px;
+  margin-top: 60px;
   font-family: var(--title-font-family);
+  
 }
 
 .navbar-color {
   background-color: #c8c8c8;
   font-family: var(--title-font-family);
-  padding: 3px;
   opacity: 0.8;
 }
 #navbarNav {
@@ -34,30 +34,30 @@ h1 {
   font-family: var(--title-font-family);
 }
 hr {
-  width: 400px;
+  width: 500px;
   display: block;
-  margin: auto;
   color: white;
+  margin: 0 auto;
 }
 .fa-github,
 .fa-square-phone,
 .fa-envelope,
 .fa-linkedin {
   color: white;
-  align-items: center;
   text-decoration: none;
-  margin: -150 auto;
-  padding: 0.5em;
   font-weight: 30px;
-  font-size: 60px;
+  font-size: 50px;
+ 
 }
-.icons {
-  display: flex;
-  justify-content: center;
-}
-#connect {
+.connect-picture {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 40px auto;
+  max-width: 100%;
   border-radius: 30px;
+  width: 600px;
+ 
+}
+footer {
+  text-align: center;
+  margin: 0 10px;
 }

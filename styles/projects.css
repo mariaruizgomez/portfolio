@@ -47,7 +47,7 @@ h1 {
   text-align: center;
   margin: 0 0 5% 0;
   padding: 0.5em;
-
+  margin-bottom: 2%;
   font-weight: 30px;
   font-size: 60px;
   display: block;
@@ -178,7 +178,6 @@ h1 {
     transform: rotateY(0deg);
   }
 }
-
 @media screen and (max-width: 767px) {
   .cardBox {
     margin-left: 2.8%;
@@ -200,10 +199,8 @@ h1 {
   .card {
     height: 260px;
   }
-  # {
-    margin-bottom: 30px;
-  }
 }
+
 .fa-github,
 .fa-square-phone,
 .fa-envelope,
@@ -223,4 +220,7 @@ hr {
 .icons {
   display: flex;
   justify-content: center;
+}
+.cardBox {
+  margin-bottom: 3%;
 }
