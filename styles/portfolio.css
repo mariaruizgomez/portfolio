@@ -4,120 +4,35 @@
   --title-font-family: "Montserrat", sans-serif;
   --content-font-family: "Lato", sans-serif;
 }
-
-body {
-  margin-top: 100px;
-  font-family: var(--content-font-family);
-  color: white;
-  text-align: center;
-  background-color: #2d2d2d;
-  align-items: center;
-  min-height: 100vh;
-  padding: 0 35px;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/381/original/3d-modern-art-with-image-glossy-metal-female-form.jpg?1674038709");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-@keyframes color-change {
-  0% {
-    background: radial-gradient(
-      circle at 7.5% 24%,
-      rgb(237, 161, 193) 0%,
-      rgb(250, 178, 172) 25.5%,
-      rgb(190, 228, 210) 62.3%,
-      rgb(215, 248, 247) 93.8%
-    );
-  }
-  20% {
-    background: linear-gradient(
-      68.6deg,
-      rgb(181, 255, 255) 1.8%,
-      rgb(252, 165, 241) 100.5%
-    );
-  }
-  40% {
-    background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
-  }
-  60% {
-    background: radial-gradient(
-      circle at 10% 20%,
-      rgb(253, 239, 132) 0%,
-      rgb(247, 198, 169) 54.2%,
-      rgb(21, 186, 196) 100.3%
-    );
-  }
-  80% {
-    background: linear-gradient(
-      110.5deg,
-      rgba(248, 196, 249, 0.66) 22.8%,
-      rgba(253, 122, 4, 0.15) 64.6%
-    );
-  }
-  100% {
-    background: linear-gradient(
-      68.6deg,
-      rgb(181, 255, 255) 1.8%,
-      rgb(252, 165, 241) 100.5%
-    );
-  }
-}
-@keyframes new-color-change {
-  0% {
-    background: radial-gradient(
-      circle at 7.5% 24%,
-      rgb(215, 248, 247) 0%,
-      rgb(190, 228, 210) 25.5%,
-      rgb(250, 178, 172) 62.3%,
-      rgb(237, 161, 193) 93.8%
-    );
-  }
-  20% {
-    background: linear-gradient(
-      68.6deg,
-      rgb(252, 165, 241) 1.8%,
-      rgb(181, 255, 255) 100.5%
-    );
-  }
-  40% {
-    background: radial-gradient(
-      circle at 10% 20%,
-      rgb(253, 239, 132) 0%,
-      rgb(247, 198, 169) 54.2%,
-      rgb(21, 186, 196) 100.3%
-    );
-  }
-  60% {
-    background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
-  }
-  80% {
-    background: linear-gradient(
-      68.6deg,
-      rgb(252, 165, 241) 1.8%,
-      rgb(181, 255, 255) 100.5%
-    );
-  }
-  100% {
-    background: linear-gradient(
-      110.5deg,
-      rgba(248, 196, 249, 0.66) 22.8%,
-      rgba(253, 122, 4, 0.15) 64.6%
-    );
-  }
-}
-
-h2 {
-  color: white;
+.hero h2 {
+  color: var(--primary-color);
   font-family: var(--title-font-family);
   font-size: 60px;
-  margin-top: 200px;
 }
-h1 {
+.hero h1 {
   margin-bottom: 25px;
   font-weight: 30px;
   font-size: 30px;
+  line-height: 2;
+  color: var(--primary-color);
+  font-family: var(--content-font-family);
+}
+.hero {
+  background-color: #2d2d2d;
+  text-align: center;
+  padding: 160px 20px;
+}
+.hero p {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: black;
+  margin: 0;
+  font-family: var(--content-font-family);
+}
+
+body {
 }
 
 hr {
@@ -130,66 +45,40 @@ hr {
 .fa-square-phone,
 .fa-envelope,
 .fa-linkedin {
-  color: white;
+  color: rgb(12, 12, 12);
   font-size: 30px;
-  display: inline-block;
-  margin: 10px;
   text-decoration: none;
 }
 
 .fa-node-js {
   color: #fbd485;
   font-size: 50px;
-  display: inline-block;
-  margin: 10px;
-  margin-bottom: 40px;
 }
 
 .fa-bootstrap {
   color: #7431f9;
   font-size: 50px;
-  display: inline-block;
-  margin: 10px;
-  margin-bottom: 40px;
 }
 .fa-html5 {
   color: #de4b25;
   font-size: 50px;
-  display: inline-block;
-  margin: 10px;
-  margin-bottom: 40px;
 }
 
 .fa-css3-alt {
   color: #254ce4;
   font-size: 50px;
-  display: inline-block;
-  margin: 10px;
-  margin-bottom: 40px;
 }
 
 .fa-react {
   color: #5ed3f3;
   font-size: 50px;
-  display: inline-block;
-  margin: 10px;
-  margin-bottom: 40px;
 }
 
 .fa-codepen {
   color: black;
   font-size: 50px;
-  display: inline-block;
-  margin: 10px;
-  margin-bottom: 40px;
 }
 
-#profile-picture {
-  max-width: 200px;
-  border-radius: 20px;
-  margin: 20px;
-  margin-top: 10px;
-}
 .navbar-color {
   background-color: #c8c8c8;
   font-family: var(--title-font-family);
@@ -201,64 +90,4 @@ hr {
   font-size: 20px;
   font-weight: 400;
   font-family: var(--title-font-family);
-}
-.wrapper {
-  max-width: 1200px;
-  position: relative;
-}
-.wrapper .carousel {
-  white-space: nowrap;
-  font-size: 0px;
-  cursor: pointer;
-  overflow: hidden;
-}
-.carousel.dragging {
-  scroll-behavior: auto;
-  cursor: grab;
-}
-.carousel.dragging img {
-  pointer-events: none;
-}
-.carousel img {
-  height: 340px;
-  object-fit: cover;
-  width: calc(100% / 3);
-  margin-left: 14px;
-}
-.carousel img:first-child {
-  margin-left: 0px;
-}
-.wrapper i {
-  top: 50%;
-  height: 46px;
-  width: 46px;
-  cursor: pointer;
-  position: absolute;
-  font-size: 1.2rem;
-  text-align: center;
-  line-height: 46px;
-  background: #fff;
-  color: black;
-  border-radius: 50%;
-  transform: translate(-50%);
-}
-.wrapper i:first-child {
-  display: none;
-  left: -23px;
-}
-.wrapper i:last-child {
-  right: -23px;
-}
-@media screen and (max-width: 900px) {
-  .wrapper img {
-    width: 100%;
-  }
-}
-
-p {
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  color: black;
 }
