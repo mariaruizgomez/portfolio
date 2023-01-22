@@ -25,9 +25,10 @@ body {
   color: #333;
   font-family: var(--content-font-family);
   font-weight: normal;
-  margin: 0;
-  padding: 0;
+
   background-color: #2d2d2d;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -194,7 +195,7 @@ h1 {
 .fa-envelope,
 .fa-linkedin {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   display: inline-block;
   margin: 10px;
   text-decoration: none;
@@ -216,3 +217,17 @@ hr {
 .nav-item {
   padding: 0 20px;
 }
+.navbar-color {
+  background-color: #c8c8c8;
+  font-family: var(--title-font-family);
+  opacity: 0.8;
+}
+#navbarNav {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--title-font-family);
+  
+}
+
+
