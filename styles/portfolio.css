@@ -86,18 +86,6 @@ hr {
   font-size: 50px;
 }
 
-.navbar-color {
-  background-color: #c8c8c8;
-  font-family: var(--title-font-family);
-  padding: 3px;
-  opacity: 0.8;
-}
-#navbarNav {
-  text-align: left;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: var(--title-font-family);
-}
 #img-get-in-touch {
   display: block;
   margin: 20px auto;
@@ -105,8 +93,7 @@ hr {
   width: 500px;
 }
 
-#icons-contact {
-}
+
 .fa-github,
 .fa-square-phone,
 .fa-envelope,
@@ -124,4 +111,8 @@ hr {
   color: #fd8891;
   font-size: 60px;
   margin-top: 20px;
+}
+
+.nav-item {
+  padding: 0 20px;
 }
