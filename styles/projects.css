@@ -229,5 +229,28 @@ hr {
   font-family: var(--title-font-family);
   
 }
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding: 40px auto;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+  hr {
+  width: 200px;
+  display: block;
+  margin: auto;
+  color: white;
+  margin-bottom: 10px;
+}
+}
 
 
